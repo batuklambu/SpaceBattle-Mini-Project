@@ -1,0 +1,114 @@
+/* *
+ {
+    box-sizing: border-box;
+  } 
+    */
+    body {
+      /* display: flex;
+      /* justify-content: center; */
+      /* align-items: center; */
+      min-height: 100vh;
+      
+  } 
+  
+   h1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #ff0062;
+    font-size: 40px;
+   
+   }
+
+  .bg {
+    background: url('/images/wallpaper-mania.com_High_resolution_wallpaper_background_ID_77701198169.jpg')
+      no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+  
+  }
+
+  .loading-text {
+    font-size: 50px;
+    color: #fff;
+  }
+  
+  button {
+    font: inherit;
+    background: #ff0062;
+    border: 1px solid #ff0062;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0.5rem;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:hover,
+  button:active {
+    background: #a927f5;
+    border-color: #a927f5;
+  }
+  
+   #controls {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .xd-content .xd-body .xd-body-inner {
+    max-height: unset;
+}
+.xd-content .xd-body p {
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+.xd-content .xd-button.xd-ok {
+    background: #734caf;
+} 
+  
+.winner{
+ text-align: center;
+}
+
+
+.wavy {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+
+
+}
+
+.wavy span {
+  position: relative;
+  display:inline-block;
+  color:red;
+  font-size: 4em;
+  text-transform: uppercase;
+  animation: animate 2s ease-in-out infinite;
+  /* animation-delay: calc(0.1s * var(--i)); */
+}
+
+@keyframes animate {
+  0% {
+      transform: translateY(0px);
+  }
+
+  20% {
+      transform: translateY(-20px);
+  }
+
+  40%,
+  100% {
+      transform: translateY(0px);
+  }
+}
