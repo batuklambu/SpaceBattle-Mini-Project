@@ -206,6 +206,9 @@ const gameStart = () => {
     }
   }
   getWinner();
+  setTimeout(() => {
+    gameReload();
+  }, 5000);
   gameReload();
 };
 
