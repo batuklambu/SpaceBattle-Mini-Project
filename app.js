@@ -174,6 +174,9 @@ const gameStart = () => {
           '%c Winner is captain!!',
           'font-style:bold;background: azure; border: 5px solid red;color: green'
         );
+        textarea.innerHTML = 'Winner is Captain';
+        textarea.style.color = 'green';
+        textarea.style.fontSize = '30px';
         break;
       }
     } else {
@@ -195,6 +198,9 @@ const gameStart = () => {
         '%c Winner Is Alien!!!',
         'font-style:bold;background: azure; border: 5px solid red;color: red'
       );
+      textarea.innerHTML = 'Winner is Alien';
+      textarea.style.color = 'red';
+      textarea.style.fontSize = '30px';
       break;
     } else {
       captainwhitsound.play();
@@ -205,11 +211,14 @@ const gameStart = () => {
       );
     }
   }
-  getWinner();
+  // getWinner();
+  setTimeout(() => {
+    retreat();
+  }, 3000);
   setTimeout(() => {
     gameReload();
   }, 5000);
-  gameReload();
+  // gameReload();
 };
 
 const gameload = () => {
